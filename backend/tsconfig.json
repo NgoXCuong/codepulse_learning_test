@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    /* File Layout */
+    "rootDir": "./src", // Nơi chứa code TS của bạn
+    "outDir": "./dist", // Nơi chứa code JS sau khi biên dịch
+
+    /* Environment Settings */
+    "module": "NodeNext", // Phù hợp với Node.js hiện đại
+    "moduleResolution": "NodeNext",
+    "target": "ESNext", // Tận dụng các tính năng JS mới nhất
+    "types": ["node"], // Đảm bảo nhận diện được global của Node (process, __dirname,...)
+
+    /* Other Outputs */
+    "sourceMap": true, // Giúp debug dễ hơn trên code TS
+    "declaration": true,
+    "declarationMap": true,
+
+    /* Stricter Typechecking Options */
+    "strict": true, // Bật tất cả các kiểm tra nghiêm ngặt
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    /* Style Options */
+    "skipLibCheck": true,
+    "esModuleInterop": true, // Quan trọng: giúp import các thư viện CommonJS như Express dễ dàng hơn
+    "forceConsistentCasingInFileNames": true,
+    "moduleDetection": "force",
+
+    /* Recommended for Modern Apps */
+    "isolatedModules": true,
+    "verbatimModuleSyntax": false // Chỉnh về false để tránh lỗi khi dùng các thư viện cũ chưa hỗ trợ ESM hoàn toàn
+  },
+  "include": ["src/**/*"], // Chỉ biên dịch code trong thư mục src
+  "exclude": ["node_modules", "**/*.test.ts"] // Loại bỏ các file không cần thiết
+}
