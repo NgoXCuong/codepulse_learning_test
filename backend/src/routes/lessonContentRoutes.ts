@@ -3,9 +3,8 @@ import * as LessonContentController from '../controllers/lessonContentController
 
 const router = Router();
 
-// GET /api/contents/lesson/:lessonId
 router.get('/lesson/:lessonId', LessonContentController.getContentByLessonId);
-router.post('/reorder/:lessonId', LessonContentController.reorderContents); // New Reorder Route
+router.post('/reorder/:lessonId', LessonContentController.reorderContents); 
 router.post('/', LessonContentController.createContent);
 router.put('/:id', LessonContentController.updateContent);
 router.delete('/:id', LessonContentController.deleteContent);

@@ -11,27 +11,20 @@
 </head>
 
 <body>
-
-    <!-- Navigation / Header -->
     <nav class="top-nav">
         <div class="nav-brand">CodePulse Admin</div>
-        <!-- Potential place for user settings later -->
     </nav>
 
-    <!-- View 1: Dashboard (Course List) -->
     <div id="dashboard-view" class="view-container active">
         <div class="dashboard-header">
             <h1>Courses</h1>
             <button class="btn btn-primary" onclick="createNew('course')">+ New Course</button>
         </div>
         <div id="course-grid" class="course-grid">
-            <!-- Course Cards Injected Here -->
         </div>
     </div>
 
-    <!-- View 2: Course Editor (Sidebar + Main) -->
     <div id="course-editor-view" class="view-container hidden">
-        <!-- Sidebar: Chapters & Lessons -->
         <div class="sidebar">
             <div class="sidebar-header">
                 <button class="btn-icon" onclick="showDashboard()" title="Back to Dashboard"><i
@@ -44,11 +37,9 @@
             </div>
 
             <div class="tree-container" id="course-tree-root">
-                <!-- Chapters & Lessons Injected Here -->
             </div>
         </div>
 
-        <!-- Main Content: Lesson Editor -->
         <div class="main-content">
             <div id="editor-area">
                 <div class="empty-state">
@@ -60,12 +51,10 @@
         </div>
     </div>
 
-    <!-- Generic Modal -->
     <div id="modal" class="modal">
         <div class="modal-content">
             <h2 id="modal-title" style="margin-bottom: 1.5rem;">Title</h2>
             <div id="modal-body">
-                <!-- Dynamic Form Fields -->
             </div>
             <div class="form-actions"
                 style="margin-top: 1.5rem; display: flex; justify-content: flex-end; gap: 0.5rem;">
@@ -75,7 +64,6 @@
         </div>
     </div>
 
-    <!-- Scripts -->
     <script src="js/api.js"></script>
     <script src="js/app.js"></script>
 </body>
